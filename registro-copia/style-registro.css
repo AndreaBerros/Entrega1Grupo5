@@ -1,0 +1,57 @@
+body {
+
+    background-color: #D9E6E8;
+    font-family: lin Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.cabecera {
+    background-color: #55868C;
+    opacity: ;
+    margin: auto;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+    /* position: sticky; */
+    top: 0;
+    display: flex;
+    flex-direction: row wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border: solid;
+    border-radius: 20px;
+    border-color:
+
+}
+
+.imagencaja1 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+}
+
+.btn:hover {
+    background-color: #55868C;
+
+}
+
+.img-fluid {
+    float: right;
+    margin-top: 100px;
+    /* mueve imagen hacia abajo */
+}
+
+.card-header {
+    background-color: #55868c;
+    color: white;
+    text-align: center;
+}
