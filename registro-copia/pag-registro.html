@@ -1,3 +1,4 @@
+<!-- Modificado -->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro RedRocket</title>
+    <title>Pagina de Registro</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -15,103 +16,120 @@
 </head>
 
 <body>
-    <header class="container header">
-        <div class="cabecera">
-            <h2 class="cabecera logo"><img class="logo" src="img/logo.png" alt="cohete"></h2>
-            <h2 class="cabecera saludo-1">RedRocket</h2>
-            <h2 class="cabecera buscador">Buscador <label for="buscador"></label><input class="cajabuscaprin"
-                    placeholder="Busca aquí" type="search" name="Buscador" id="buscador"></h2>
-            <div class="cabecera notificaciones">
-                <img class="imagencaja1" src="img/notificaciones.png" alt="Notificaciones" title="Notificaciones">
-                <img class="imagencaja1" src="img/mensajes.png" alt="Mensajes" title="Mensajes">
-                <img class="imagencaja1" src="img/astronautacolor.png" alt="Mi Perfil" title="Mi Perfil">
-                <img class="imagencaja1" src="img/favoritos.png" alt="Favoritos" title="Favoritos">
-                <a href="http://127.0.0.1:5501/a%C3%B1adiramigos.html"><img class="imagencaja1" src="img/+amigos.png"
-                        alt="Agregar amigos" title="Añadir Amigos"></a>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./img/logo.png" alt="Logo">
+            </div>
+
+            <div>
+                <h1>RedRocket</h1>
+            </div>
+
+            <div class="search-box">
+                <label for="Buscador"></label>
+                <input type="text" placeholder="Buscar...">
+                <button type="submit">&#128269;</button>
+            </div>
+
+            <div class="buttons">
+                <img src="./img/notificaciones.png" alt="Notificaciones">
+                <img src="./img/mensajes.png" alt="Mensajes">
+                <img src="./img/astronautacolor.png" alt="Mi Perfil">
+                <img src="./img/favoritos.png" alt="Favoritos">
+                <img src="./img/+amigos.png" alt="Agregar amigos">
+            </div>
+
+            <div class="dropdown">
+                <button class="menu-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">&#9776;
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Notificaciones</a></li>
+                        <li><a class="dropdown-item" href="#">Mensajes</a></li>
+                        <li><a class="dropdown-item" href="#">Mi Perfil</a></li>
+                        <li><a class="dropdown-item" href="#">Favoritos</a></li>
+                        <li><a class="dropdown-item" href="#">Agregar amigos</a></li>
+                    </ul>
+                </button>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <main class="container main">
-        <div class="row">
-            <div class="col-lg-4">
-                <img src="./img/movilcolor2.png" class="img-fluid" alt="Logo-registro">
-            </div>
-            <div class="col-lg-8">
-                <div class="container mt-5">
-                    <div class="row">
-                        <div class="col-lg-8 mx-auto">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h4>Registro de Usuario</h4>
-                                </div>
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label for="foto">Foto de Perfil:</label>
-                                        <input type="file" class="form-control-file" id="foto" name="foto">
+    <main>
+        <main class="container main">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="./img/movilcolor2.png" class="img-fluid" alt="Logo-registro">
+                </div>
+                <div class="col-lg-8">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-lg-8 mx-auto">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4>Registro de Usuario</h4>
                                     </div>
-
-                                    <div class="form-group">
-                                        <label for="nombre">Nombre Completo:</label>
-                                        <input type="text" class="form-control" id="nombre" name="nombre"
-                                            placeholder="Ej. Pedro Perez">
-                                    </div>
-
-                                    <div class="form-row">
-                                        <div class="form-group col-lg-6">
-                                            <label for="ciudad">Ciudad de Residencia:</label>
-                                            <input type="text" class="form-control" id="ciudad" name="ciudad"
-                                                placeholder="Ej: Madrid">
-                                        </div>
-
-                                        <div class="form-group col-lg-6">
-                                            <label for="pais">País de Residencia:</label>
-                                            <input type="text" class="form-control" id="pais" name="pais"
-                                                placeholder="Ej. España">
-                                        </div>
-
-                                        <div class="form-group col-lg-6">
-                                            <label for="edad">Edad:</label>
-                                            <input type="number" class="form-control" id="edad" name="edad">
+                                    <div class="card-body">
+                                        <div class="form-group">
+                                            <label for="foto">Foto de Perfil:</label>
+                                            <input type="file" class="form-control-file" id="foto" name="foto">
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="estudios">Estudios y certificaciones:</label>
-                                            <textarea class="form-control" id="estudios" name="estudios"
-                                                placeholder="Ej: Full-stack Java and Angular developer"></textarea>
+                                            <label for="nombre">Nombre Completo:</label>
+                                            <input type="text" class="form-control" id="nombre" name="nombre"
+                                                placeholder="Ej. Pedro Perez">
                                         </div>
 
-                                        <div class="form-group">
-                                            <label for="idiomas">Idiomas:</label>
-                                            <input type="text" class="form-control" id="idiomas" name="idiomas"
-                                                placeholder="Ej: Ingles, Español">
-                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-lg-6">
+                                                <label for="ciudad">Ciudad de Residencia:</label>
+                                                <input type="text" class="form-control" id="ciudad" name="ciudad"
+                                                    placeholder="Ej: Madrid">
+                                            </div>
 
-                                        <div class="form-group">
-                                            <label for="linkedin">Perfil de LinkedIn:</label>
-                                            <input type="text" class="form-control" id="linkedin" name="linkedin">
-                                        </div>
+                                            <div class="form-group col-lg-6">
+                                                <label for="pais">País de Residencia:</label>
+                                                <input type="text" class="form-control" id="pais" name="pais"
+                                                    placeholder="Ej. España">
+                                            </div>
 
-                                        <div class="form-group">
-                                            <label for="hobbies">Hobbies:</label>
-                                            <textarea class="form-control" id="hobbies" name="hobbies"
-                                                placeholder="Ej: Astronomia, Senderismo"></textarea>
-                                        </div>
+                                            <div class="form-group col-lg-6">
+                                                <label for="edad">Edad:</label>
+                                                <input type="number" class="form-control" id="edad" name="edad">
+                                            </div>
 
-                                        <button type="submit" class="btn btn-outline-primary">Registrarse</button>
+                                            <div class="form-group">
+                                                <label for="estudios">Estudios y certificaciones:</label>
+                                                <textarea class="form-control" id="estudios" name="estudios"
+                                                    placeholder="Ej: Full-stack Java and Angular developer"></textarea>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="idiomas">Idiomas:</label>
+                                                <input type="text" class="form-control" id="idiomas" name="idiomas"
+                                                    placeholder="Ej: Ingles, Español">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="linkedin">Perfil de LinkedIn:</label>
+                                                <input type="text" class="form-control" id="linkedin" name="linkedin">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="hobbies">Hobbies:</label>
+                                                <textarea class="form-control" id="hobbies" name="hobbies"
+                                                    placeholder="Ej: Astronomia, Senderismo"></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-outline-primary">Registrarse</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-
+        </main>
     </main>
-    <footer>
-
-    </footer>
 </body>
 
 </html>
