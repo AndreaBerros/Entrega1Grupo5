@@ -1,0 +1,90 @@
+body {
+    background-color: #D9E6E8;
+}
+.caja {
+    border-style: solid;
+    border-radius: 5px;
+    font-weight: bolder;
+    background-color: #97b6b3;
+    padding: 5px;
+ 
+}
+
+#buscar {
+    background-color: #97b6b3;
+    color: black;
+}
+.boton {
+    width: 150px;
+    height: 60px;
+    border-style: double;
+    border-radius: 5px;
+    background-color: #97b6b3;
+}
+
+.boton:hover {
+    background-color: lightslategrey;
+}
+
+.imagen {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+.card {
+    width: 90%;
+    text-align: center;
+    background-color:#D9E6E8;
+    margin: 0 auto;
+    border: solid  #8bbeec;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px #004A8F;
+}
+.container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col-6 {
+    width: 150px;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+body {
+    font-weight: bolder;
+    font-size: 30px;
+  
+}
+.imagencaja1 {
+    width: 30px;
+    height: 30px;
+}
+.container-fluid {
+    background-color: dimgray;
+}
+.container {
+    margin-top: 10px;
+}
+.col-lg-3 {
+    background-color: aqua;
+}
+
+@media screen and (max-width:768px) {
+    body {
+        font-size: 10px;
+    }
+    .container-fluid {
+        width: fit-content;
+    }
+    
+}
+
+#cabecera {
+  margin-bottom: 100px;
+  background-color: #55868C;
+}
