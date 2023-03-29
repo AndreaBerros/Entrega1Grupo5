@@ -2,7 +2,6 @@ body {
     background-color: #D9E6E8;
     font-family: lin Arial, Helvetica, sans-serif;
     font-weight: bold;
-
 }
 
 nav {
@@ -35,6 +34,12 @@ nav {
     border-color: white;
 }
 
+.img-header {
+    display: flex;
+    max-height: 50px;
+    max-width: 100%;
+}
+
 .buttons img {
     max-height: 20px;
     margin: 5px;
@@ -47,19 +52,16 @@ nav {
     color: #fff;
     font-size: 20px;
     cursor: pointer;
-
 }
 
 .menu-btn:focus {
     outline: none;
 }
 
-/* Buscador */
 .search-box {
     display: flex;
     align-items: center;
     width: 45%;
-
 }
 
 input[type="text"] {
@@ -68,7 +70,6 @@ input[type="text"] {
     font-size: 20px;
     width: 100%;
     max-width: 200px;
-
 }
 
 button[type="submit"] {
@@ -89,36 +90,57 @@ h4 {
 }
 
 .img-fluid {
-    margin-top: 200px;
+    display: flex;
     width: auto;
     height: auto;
     margin-left: auto;
     margin-right: auto;
 }
 
+.img-redrocket {
+    display: flex;
+    height: 100px;
+    width: 100%;
+}
+
+.col-lg-4 {
+    margin-top: 200px;
+}
+
 .col-lg-8 {
     margin-top: 50px;
 }
 
-/* ///////////////// */
+.saludo {
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 28px;
+    width: auto;
+    text-align: justify;
+}
+
+.small {
+    margin-top: 5%;
+    font-size: 11px;
+    color: #777;
+    text-align: justify;
+}
 
 @media screen and (max-width: 768px) {
     .nav-container {
         flex-wrap: wrap;
     }
 
-    /* .logo {
-      order: 1;
-      margin-bottom: 10px;
-      
-    } */
+    .logo {
+        display: flex;
+        margin-top: 3px;
+
+    }
 
     .buttons {
         order: 3;
         width: 100%;
         flex-direction: column;
-        /* margin-bottom: 10px; */
-        /* display: flex; */
     }
 
     .buttons img {
@@ -149,12 +171,26 @@ h4 {
 
     .img-fluid {
         display: none;
-        /* display: flexbox; */
-        /* float: right; */
-        /* margin-top: 100px;
-        width: auto;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto; */
+
+    }
+
+    .img-header {
+        display: none;
+    }
+
+    .img-redrocket {
+        display: none;
+    }
+
+    .saludo {
+        display: none;
+    }
+
+    .col-lg-4 {
+        margin-top: 0px;
+    }
+
+    .col-lg-8 {
+        margin-top: 20px;
     }
 }
