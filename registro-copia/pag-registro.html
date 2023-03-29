@@ -24,7 +24,6 @@
 
             <div>
                 <img src="./img/RedRocket.png" class="img-header" alt="RedRocket">
-                <!-- <h1>RedRocket</h1> -->
             </div>
 
             <div class="search-box">
@@ -71,8 +70,8 @@
                                 <div class="card">
                                     <div class="card-header">
                                         <h4>Registro de Usuario</h4>
-                                        <!-- <p class="mediun"> Es Rapido y Facil</p> -->
                                     </div>
+
                                     <div class="card-body">
                                         <div class="form-group">
                                             <label for="foto">Foto de Perfil:</label>
@@ -81,7 +80,7 @@
 
                                         <div class="form-group">
                                             <label for="nombre">Nombre Completo:</label>
-                                            <input type="text" class="form-control" id="nombre" name="nombre"
+                                            <input type="text" class="form-control" id="name" name="nombre"
                                                 placeholder="Ej. Pedro Perez">
                                         </div>
 
@@ -152,8 +151,10 @@
                                                     Política de cookies. Es posible que te enviemos notificaciones por
                                                     SMS, que podrás desactivar cuando quieras.</p>
                                             </div>
-                                            <button type="submit" class="btn btn-outline-primary">Registrarse</button>
-                                            <button type="submit" class="btn btn-outline-primary">Cancelar</button>
+                                            <button type="submit" class="btn btn-outline-primary"
+                                                id="btn-register">Registrarse</button>
+                                            <button class="btn btn-outline-primary"
+                                                onclick="cancelar()">Cancelar</button>
                                         </div>
                                     </div>
                                 </div>
@@ -163,6 +164,9 @@
                 </div>
         </main>
     </main>
+
+
+    <script src="./pag-registro.js"></script>
 </body>
 
 </html>
