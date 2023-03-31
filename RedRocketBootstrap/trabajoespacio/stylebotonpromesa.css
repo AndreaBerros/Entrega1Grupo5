@@ -88,3 +88,8 @@ body {
   margin-bottom: 100px;
   background-color: #55868C;
 }
+.img-header {
+    display: flex;
+    max-height: 50px;
+    max-width: 100%;
+}

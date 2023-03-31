@@ -254,6 +254,11 @@ li {
     height: 30px;
     margin-left: 100px;
 }
+.img-header {
+    display: flex;
+    max-height: 50px;
+    max-width: 100%;
+}
 
 /*bootstrap a partir de aquí*/
 
