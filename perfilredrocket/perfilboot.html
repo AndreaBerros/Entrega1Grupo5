@@ -13,15 +13,26 @@
     <header class="container sticky-top">
         <div class="cabecera">
             <h2 class="cabecera logo"><img class="logo" src="img/logo.png" alt="cohete"></h2>
-            <a href="/RedRocketBootstrap/HomePage.html"><h2 class="cabecera saludo-1">RedRocket</h2></a>
-            <h2 class="cabecera buscador">Buscador <label for="buscador"></label><input class="cajabuscaprin" placeholder="Busca aquí" type="search" name="Buscador" id="buscador"></h2>
+            <img class="saludo-1" src="img/RedRocket.png" alt="RedRocket">
+            <h2 class="cabecera buscador"><label for="buscador"></label><input class="cajabuscaprin" placeholder="Busca aquí" type="search" name="Buscador" id="buscador"></h2>
             <div class="cabecera notis">
                 <img class="notificaciones" src="img/notificaciones.png" alt="Notificaciones" title="Notificaciones">
                 <img class="notificaciones" src="img/mensajes.png" alt="Mensajes" title="Mensajes">
                 <img class="notificaciones" src="/RedRocketBootstrap/img/astronautanegro.png" alt="Mi Perfil" title="Mi Perfil">
                 <img class="notificaciones" src="img/favoritos.png" alt="Favoritos" title="Favoritos">
                 <img class="notificaciones" src="img/+amigos.png" alt="Agregar amigos" title="Añadir Amigos"></a>                
-        </div>        
+        </div> 
+        <div class="dropdown">
+            <button class="menu-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">&#9776;
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Notificaciones</a></li>
+                    <li><a class="dropdown-item" href="#">Mensajes</a></li>
+                    <li><a class="dropdown-item" href="#">Mi Perfil</a></li>
+                    <li><a class="dropdown-item" href="#">Favoritos</a></li>
+                    <li><a class="dropdown-item" href="#">Agregar amigos</a></li>
+                </ul>
+            </button>
+        </div>       
     </header>
 
     <main class="container principal">
@@ -54,13 +65,14 @@
                     <p><img class="notificaciones" src="img/email.png" alt="Calendario">rantserra@gmail.com</p>
                     <p><img class="notificaciones" src="img/certificado.png" alt="Certi"> Full Stack Developer</p>
                     <p><img class="notificaciones" src="img/marcador-de-posicion.png" alt=""> Gijón, Principado de Asturias, España</p>  
-                    <button class="boton1boot">Edita tu perfil</button></a>
+                    <input class="boton1boot bton" type="button" id="bton2" value="Edita tu perfil"></a>
+                    <input class="boton1boot bton" type="button" id="bton" value="Elimina tu cuenta"></a>
                 </div>
             </section>                         
             <section class="col-lg-3">AMIGOS
                 <div class="cajas cajaamigos">
                     <ul>
-                        <a href="/perfilredrocket/perfilboot2.html"><li> </li><img class="notificaciones" src="img/amigo.png" alt=""> <span class="nombreboot">Javier Blanco</span><button class="boton2">Aceptar</button> <button class="boton3">Rechazar</button></a>
+                        <li> </li><img class="notificaciones" src="img/amigo.png" alt=""> <span class="nombreboot">Javier Blanco</span><button class="boton2">Aceptar</button> <button class="boton3">Rechazar</button>
                         <li> </li><img class="notificaciones" src="img/amigo.png" alt=""> <span class="nombreboot">Juliana Blasco</span><button class="boton2">Aceptar</button> <button class="boton3">Rechazar</button>
                         <li> </li><img class="notificaciones" src="img/amigo.png" alt=""> <span class="nombreboot">Alberto Suárez</span><button class="boton2">Aceptar</button> <button class="boton3">Rechazar</button>  
                     </ul>
@@ -79,6 +91,7 @@
         </form>
     </div>
 
-    
+  
 </body>
+<script src="app.js"></script>
 </html>

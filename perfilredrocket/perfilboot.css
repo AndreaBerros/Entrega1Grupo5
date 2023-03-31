@@ -9,7 +9,11 @@ body{
 
 }
 
-
+.saludo-1 {
+    display: flex;
+    max-height: 50px;
+    max-width: 100%;
+}
 
 .logo {
     height: 80px;
@@ -172,3 +176,102 @@ ul{
     background-color: #418B83;
 }
 
+.menu-btn {
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+@media screen and (max-width: 992px) {
+    .cabecera {
+        flex-wrap: wrap;
+    }
+
+    /* .logo {
+      order: 1;
+      margin-bottom: 10px;
+      
+    } */
+
+    .notis {
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+        /* margin-bottom: 10px; */
+        /* display: flex; */
+    }
+
+    .notificaciones {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .notis ul {
+        display: none;
+    }
+
+    .notis ul.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .notis ul.open li {
+        margin: 10px 0;
+    }
+
+   
+    
+}
+
+@media screen and (max-width: 768px) {
+    .cabecera {
+        flex-wrap: wrap;
+    }
+
+    /* .logo {
+      order: 1;
+      margin-bottom: 10px;
+      
+    } */
+
+    .notis {
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+        /* margin-bottom: 10px; */
+        /* display: flex; */
+    }
+
+    .notificaciones {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .notis ul {
+        display: none;
+    }
+
+    .notis ul.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .notis ul.open li {
+        margin: 10px 0;
+    }
+
+    .saludo-1{
+        display: none;
+    }
+}
