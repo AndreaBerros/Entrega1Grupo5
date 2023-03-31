@@ -31,7 +31,6 @@ background-color: #D9E6E8;
 }
 .cabecera {
     background-color: #55868C;
-    opacity: ;
     margin: auto;
     text-align: center;
     font-weight: bolder;
@@ -52,18 +51,14 @@ background-color: #D9E6E8;
     border: solid;
     border-radius: 20px;
     border-color:
-    order: 1; 
+
 }
 .cajabuscaprin {
     position: relative;
     left: 10px;
     top: 5px;
 }
-.buscador {
-    padding-top: 
-    position: relative;
-    bottom: 30x;
-}
+
 .saludo-1 {
     order: 2;  
     position: relative;
@@ -209,7 +204,7 @@ li {
 .chat {
     border: solid black;
     border-radius: 5px;S
-    z-index: 1;
+ 
 }
 .añadiramigo {
     width: 150px;
@@ -258,6 +253,11 @@ li {
     width: 30px;
     height: 30px;
     margin-left: 100px;
+}
+.img-header {
+    display: flex;
+    max-height: 50px;
+    max-width: 100%;
 }
 
 /*bootstrap a partir de aquí*/
@@ -323,26 +323,11 @@ margin-top: 20px;
     bottom: 100px;
 }
 @media screen and (max-width:768px) {
-    body {
-        font-size: 20px;
+    .col-lg-3{
+        display: block;
 
     }
     
     
 }
 
-@media screen and (max-width:375px)  {
-    body {
-        font-size: 10px;
-    }
-    
-   
-}
-    
-
-@media screen and (max-width:1024px) {
-    body {
-        font-size: 10px;
-    }
-   
-}
