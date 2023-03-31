@@ -22,7 +22,7 @@ nav {
     margin: 0 auto;
     height: 100%;
     padding: 0 20px;
-    background-color: 5868;
+    background-color: #5868;
 }
 
 .logo img {
@@ -69,7 +69,6 @@ input[type="text"] {
     border-radius: 5px;
     font-size: 20px;
     width: 100%;
-    /* max-width: 200px; */
 }
 
 button[type="submit"] {
@@ -124,6 +123,11 @@ h4 {
     font-size: 11px;
     color: #777;
     text-align: justify;
+}
+
+.footer{
+    background-color:  #5868;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
